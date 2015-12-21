@@ -23,16 +23,20 @@ Usage
 -------
 
 -First template tag is 'objfilter' that allows query filtering.
+
  Example usage:
+
    {% load objfilter %}
-   {% objfilter app='your_app' model='your_model_in_app' name='erdem' user=request.user.id salary__gte=700 as your_object %}
+   {% objfilter app='your_app' model='your_model_in_app' name='erdem' user=request.user.id salary__gte=700 as your_object%}
 
    {% for obj in your_object %}
      .....
    {% endfor %}
 
 -Second template tag is 'checkperm' that allows check user permissions.
+ 
  Example usage:
+ 
     {% load ckeckperm %}
     {% checkperm 'permission_name' as can_do %}
 
@@ -41,7 +45,9 @@ Usage
     {% endif %}
 
 -Last template tag is 'ckeckgroup' that allows ckeck user is member this group.
+ 
  Example usage:
+ 
     {% load ckeckgroup %}
     {% ckeckgroup 'group_name' as ismember %}
 
