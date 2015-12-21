@@ -37,19 +37,19 @@ Usage
  
  Example usage:
  
-    {% load ckeckperm %}
+    {% load checkperm %}
     {% checkperm 'permission_name' as can_do %}
 
     {% if can_do %}
       .....
     {% endif %}
 
--Last template tag is 'ckeckgroup' that allows ckeck user is member this group.
+-Last template tag is 'checkgroup' that allows ckeck user is member this group.
  
  Example usage:
  
-    {% load ckeckgroup %}
-    {% ckeckgroup 'group_name' as ismember %}
+    {% load checkgroup %}
+    {% checkgroup 'group_name' as ismember %}
 
     {% if ismember %}
       ......
