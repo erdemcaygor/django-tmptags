@@ -18,7 +18,7 @@ setup(
     description='A simple Django app to query filter, check permission and group control in template.',
     long_description=README,
     url='',
-    author='Erdem Çaygör',
+    author='Erdem Caygor',
     author_email='erdem.caygor@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
